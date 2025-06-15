@@ -12,9 +12,9 @@ local redzlib = {
 	Themes = {
 		Darker = {
 			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 75, 0)),
+				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(100, 0, 0)),
 				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0.5, 0.5, 0.5)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(75, 0, 0))
+				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(5, 0, 100))
 			}),
 			["Color Hub 2"] = Color3.fromRGB(0, 0, 0),
 			["Color Stroke"] = Color3.fromRGB(5, 5, 5),
@@ -1605,7 +1605,7 @@ function redzlib:MakeWindow(Configs)
 			SaveSize = MainFrame.Size
 			ControlSize1.Visible = false
 			ControlSize2.Visible = false
-			CreateTween({MainFrame, "Size", UDim2.fromOffset(MainFrame.Size.X.Offset, 28), 0.25, true})
+			CreateTween({MainFrame, "Size", UDim2.fromOffset(MainFrame.Size.X.Offset, 28), 2.00, true})
 			Minimized = true
 		end
 		
