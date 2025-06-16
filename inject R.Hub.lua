@@ -1580,13 +1580,13 @@ function redzlib:MakeWindow(Configs)
 	local Window, FirstTab = {}, false
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
-			Title = "FECHAR",
-			Text = "NÃO FECHE HUB SEM DESLIGAR TUDO!!",
+			Title = "FECHAR?",
+			Text = "QUEM FECHAR O HUB É GAY!!",
 			Options = {
-				{"Confirm", function()
+				{"SOU GAY", function()
 					ScreenGui:Destroy()
 				end},
-				{"Cancel"}
+				{"NÃO SOU GAY"}
 			}
 		})
 	end
@@ -1605,7 +1605,7 @@ function redzlib:MakeWindow(Configs)
 			SaveSize = MainFrame.Size
 			ControlSize1.Visible = false
 			ControlSize2.Visible = false
-			CreateTween({MainFrame, "Size", UDim2.fromOffset(MainFrame.Size.X.Offset, 28), 2.00, true})
+			CreateTween({MainFrame, "Size", UDim2.fromOffset(MainFrame.Size.X.Offset, 28), 5.00, true})
 			Minimized = true
 		end
 		
