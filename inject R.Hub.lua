@@ -1617,7 +1617,7 @@ function redzlib:MakeWindow(Configs)
 	function Window:AddMinimizeButton(Configs)
 		local Button = MakeDrag(Create("ImageButton", ScreenGui, {
 			Size = UDim2.fromOffset(35, 35),
-			Position = UDim2.fromScale(0.15, 0.15),
+			Position = UDim2.fromScale(2.15, 2.15),
 			BackgroundTransparency = 1,
 			BackgroundColor3 = Theme["Color Hub 2"],
 			AutoButtonColor = false
